@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kpky="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+     >
+    
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="44dp"
+    android:paddingEnd="16dp"
+    android:paddingRight="16dp"
+    android:paddingStart="16dp">
+    <com.zhan.kykp.widget.CircleImageView
+        android:id="@+id/recommend_item_head"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/myfocus_head"
+        android:layout_centerVertical="true" 
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+    <RelativeLayout 
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/recommend_item_head" >
+        <TextView
+        android:id="@+id/recommend_item_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_content"
+        android:textSize="15sp" 
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/recommend_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_content"
+        android:textSize="15sp" 
+        android:layout_below="@+id/recommend_item_nickname"
+        android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" 
+        android:layout_alignParentRight="true"
+       >
+      <TextView
+        android:id="@+id/right_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recommend_your_answer"
+        android:textSize="12sp"
+        android:layout_centerVertical="true" />  
+        
+      <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/right_img"
+        android:src="@drawable/dianzan"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true" />  
+    </RelativeLayout>
+</RelativeLayout>
+<View 
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@color/divider_color"/>
+
+<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="14dp" >
+
+         <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"> 
+        <ImageView
+            android:id="@+id/recommend_play_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_play" />
+
+        <TextView
+            android:id="@+id/recordTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="2dp" />
+</LinearLayout> 
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical" 
+        android:layout_marginTop="14dp"
+        >
+
+        <TextView
+            android:id="@+id/recommend_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_small"
+            android:ellipsize="end"
+            android:maxLines="3" 
+            />
+        
+        
+         <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:baselineAligned="false"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+         <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+             android:gravity="center_vertical"
+            >
+            <com.zhan.kykp.widget.RatingBar
+                android:id="@+id/ratingbar_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                kpky:empty_star="@drawable/rating_small_empty"
+                kpky:full_star="@drawable/rating_small_full"
+                kpky:half_star="@drawable/rating_small_half"
+                kpky:isIndicator="true"
+                kpky:numStars="5"
+                kpky:rating="4.5"
+                kpky:startsPadding="4dp" />
+        </FrameLayout>
+        <TextView
+                android:id="@+id/recommend_item_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:drawablePadding="8dp"
+                android:textColor="@color/text_color_content"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_alignParentRight="true"
+                 />
+    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

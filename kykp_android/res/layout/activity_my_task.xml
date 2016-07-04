@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    >
+   
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp">
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="4dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:background="#FC557B" />
+
+        <TextView
+            android:id="@+id/mytask_spokensquare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/view_1"
+            android:gravity="center_vertical"
+
+            android:textColor="#494949"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+        <com.zhan.kykp.widget.MyTaskListView
+            android:id="@+id/mytask_square_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp">
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="4dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:background="#FC557B" />
+
+        <TextView
+            android:id="@+id/mytask_beikao_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/view_2"
+            android:gravity="center_vertical"
+
+            android:textColor="#494949"
+            android:textSize="16sp" />
+    </RelativeLayout>
+        <com.zhan.kykp.widget.MyTaskListView
+            android:id="@+id/mytask_beikao_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp">
+
+        <View
+            android:id="@+id/view_3"
+            android:layout_width="4dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:background="#FC557B" />
+
+        <TextView
+            android:id="@+id/mytask_otherentity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/view_3"
+            android:gravity="center_vertical"
+
+            android:textColor="#494949"
+            android:textSize="16sp" />
+    </RelativeLayout>
+        <com.zhan.kykp.widget.MyTaskListView
+            android:id="@+id/mytask_other_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>
+</ScrollView>

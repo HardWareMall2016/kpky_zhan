@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_answer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_rounded_bold_underline"
+    android:drawableLeft="@drawable/add"
+    android:drawablePadding="16dp"
+    android:drawableStart="@drawable/add"
+    android:gravity="center_vertical"
+    android:paddingBottom="22dp"
+    android:paddingLeft="24dp"
+    android:paddingStart="24dp"
+    android:paddingTop="22dp"
+    android:text="@string/tpo_re_answer_question"
+    android:textColor="@color/text_color_content"
+    android:textSize="18sp" />

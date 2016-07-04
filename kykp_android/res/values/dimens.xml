@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="action_bar_height">48dp</dimen>
+
+    <dimen name="linearLayout_height">80dp</dimen>
+    <dimen name="mytask_unfinish_width">72dp</dimen>
+    <!-- 控件式样参数 -->
+    <dimen name="bbuton_rounded_corner_radius">7dp</dimen>
+    
+    <dimen name="min_item_height">48dp</dimen>
+    <dimen name="search_height">40dp</dimen>
+    
+    <dimen name="margin_left">80dp</dimen>
+    
+    <!-- 系统字体大小 -->
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="tv_jj_yuce_size">18sp</dimen>
+    
+    <dimen name="dialog_tvLoad">18sp</dimen>
+    
+    <dimen name="topic_height">70dp</dimen>
+    <dimen name="question_height">20dp</dimen>
+
+</resources>

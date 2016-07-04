@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="21dp" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="14dp"
+            android:text="@string/speaking_selelct_question"
+            android:textColor="@color/dark_red"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/speaking_answering_classification"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <Button
+                android:id="@+id/btn_answered_type_all"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_border"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:padding="8dp"
+                android:text="@string/speaking_all_question"
+                android:textColor="@color/text_color_main"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_un_answered"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_border"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:padding="8dp"
+                android:text="@string/speaking_un_answered"
+                android:textColor="@color/text_color_main"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/speaking_content_classification"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <Button
+                android:id="@+id/btn_all_question"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_border"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/speaking_all_question"
+                android:textColor="@color/text_color_main"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_border"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/speaking_education"
+                android:textColor="@color/text_color_main"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_border"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/speaking_leisure_time"
+                android:textColor="@color/text_color_main"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_border"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/speaking_advice"
+                android:textColor="@color/text_color_main"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <Button
+                android:singleLine="true"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_border"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/speaking_modern_tech"
+                android:textColor="@color/text_color_main"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_border"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/speaking_object"
+                android:textColor="@color/text_color_main"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_border"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/speaking_job"
+                android:textColor="@color/text_color_main"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_border"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/speaking_activity"
+                android:textColor="@color/text_color_main"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_border"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/speaking_person"
+                android:textColor="@color/text_color_main"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_border"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/speaking_random"
+                android:textColor="@color/text_color_main"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_border"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/speaking_life"
+                android:textColor="@color/text_color_main"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_border"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/speaking_experience"
+                android:textColor="@color/text_color_main"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_border"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/speaking_place"
+                android:textColor="@color/text_color_main"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_border"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/speaking_money"
+                android:textColor="@color/text_color_main"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_border"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/speaking_media"
+                android:textColor="@color/text_color_main"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_border"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/speaking_skill"
+                android:textColor="@color/text_color_main"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

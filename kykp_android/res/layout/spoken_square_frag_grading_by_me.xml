@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kpky="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_white_rounded"
+            android:orientation="vertical"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:text="Question:"
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_normal" />
+
+            <com.zhan.kykp.widget.ScrollableTextView
+                android:id="@+id/question_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/text_color_content"
+                android:textSize="@dimen/text_size_small" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_grey_rounded_bottom"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <ImageView
+                    android:id="@+id/play_pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/spoken_square_play" />
+
+                <com.zhan.kykp.widget.SampleProgressView
+                    android:id="@+id/play_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginStart="14dp" />
+
+                <TextView
+                    android:id="@+id/play_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_small" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/grading_by_me_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/divider_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/spoken_square_grade_for_answer"
+                    android:textColor="#99a3b1"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/divider_color" />
+            </LinearLayout>
+
+            <com.zhan.kykp.widget.RatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                kpky:disable_star="@drawable/rating_normal_disable"
+                kpky:empty_star="@drawable/rating_normal_empty"
+                kpky:full_star="@drawable/rating_normal_full"
+                kpky:half_star="@drawable/rating_normal_half"
+                kpky:isIndicator="false"
+                kpky:numStars="5"
+                kpky:rating="0"
+                kpky:enable="false"
+                kpky:startsPadding="14dp" />
+            
+            <TextView
+                android:id="@+id/switch_other"
+                android:layout_width="116dp"
+                android:layout_marginTop="24dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_cyan_rounded"
+                android:gravity="center"
+                android:minHeight="38dp"
+                android:text="@string/spoken_square_switch_other"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/grading_by_other_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="22dp"
+            android:orientation="vertical" >
+
+            <com.zhan.kykp.widget.CircleImageView
+                android:id="@+id/avatar"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/def_avatar"
+                kpky:border_width="0dp" />
+
+            <TextView
+                android:id="@+id/answer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/text_color_content"
+                android:textSize="@dimen/text_size_small" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp" >
+
+                <LinearLayout
+                    android:id="@+id/praise_content"
+                    android:layout_width="116dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/bg_cyan_rounded"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/praise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/spoken_square_praise"
+                        android:drawablePadding="8dp"
+                        android:drawableStart="@drawable/spoken_square_praise"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/listen_other"
+                    android:layout_width="116dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginStart="14dp"
+                    android:background="@drawable/bg_cyan_rounded"
+                    android:gravity="center"
+                    android:text="@string/spoken_square_listen_other"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/divider_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/spoken_square_other_grade"
+                    android:textColor="#99a3b1"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/divider_color" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp" >
+
+                <com.zhan.kykp.widget.RatingBar
+                    android:id="@+id/ratingbar_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    kpky:disable_star="@drawable/rating_normal_disable"
+                    kpky:empty_star="@drawable/rating_normal_empty"
+                    kpky:full_star="@drawable/rating_normal_full"
+                    kpky:half_star="@drawable/rating_normal_half"
+                    kpky:isIndicator="true"
+                    kpky:numStars="5"
+                    kpky:rating="4.5"
+                    kpky:startsPadding="14dp" />
+
+                <TextView
+                    android:id="@+id/grading_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/ratingbar_other"
+                    android:layout_toEndOf="@id/ratingbar_other"
+                    android:layout_toRightOf="@id/ratingbar_other"
+                    android:textColor="@color/text_color_content"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="26dp"
+                android:text="@string/spoken_square_good_answer_comment"
+                android:textColor="@color/text_color_supplementary"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

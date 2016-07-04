@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zhan.kykp.widget.SelectableRoundedImageView
+        android:id="@+id/goods_pic"
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mall_def_product"
+        app:sriv_border_color="#008fea"
+        app:sriv_border_width="0dip"
+        app:sriv_left_bottom_corner_radius="0dip"
+        app:sriv_left_top_corner_radius="@dimen/bbuton_rounded_corner_radius"
+        app:sriv_oval="false"
+        app:sriv_right_bottom_corner_radius="0dip"
+        app:sriv_right_top_corner_radius="@dimen/bbuton_rounded_corner_radius" />
+
+
+    <RelativeLayout
+        android:id="@+id/goods_info_content"
+        android:layout_width="fill_parent"
+        android:layout_height="28dp"
+        android:layout_alignBottom="@id/goods_pic"
+        android:background="#66000000"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <TextView
+            android:id="@+id/goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/goods_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/goods_info_content"
+        android:background="@drawable/bg_white_rounded_bottom"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <TextView
+            android:id="@+id/scholarship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/integral_mall_exchange_need_scholarship"
+            android:textColor="@color/text_color_content"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/scholarship_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/scholarship"
+            android:textColor="@color/dark_red"
+            android:textSize="@dimen/text_size_small" />
+
+        <Button
+            android:id="@+id/btn_exchange"
+            android:layout_width="66dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_dark_red_rounded"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="290dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:paddingTop="18dp" >
+
+        <TextView
+            android:id="@+id/topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="@dimen/topic_height" />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topic"
+            android:layout_marginTop="@dimen/question_height"
+            android:maxLines="8"
+            android:lineSpacingExtra="4dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/text_color_content"
+            android:textSize="@dimen/text_size_normal" />
+
+    </RelativeLayout>
+
+</FrameLayout>

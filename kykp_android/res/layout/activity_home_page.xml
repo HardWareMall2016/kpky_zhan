@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"></FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/divider_color"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingTop="6dp">
+
+        <TextView
+            android:id="@+id/home_page"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="1dp"
+            android:drawableTop="@drawable/iocn_home_focused"
+            android:gravity="center"
+            android:text="@string/home_page"
+            android:textColor="@color/dark_red" />
+
+        <com.zhan.kykp.widget.RedTipTextView
+            android:id="@+id/message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="1dp"
+            android:drawableTop="@drawable/icon_message_un_focused"
+            android:gravity="center"
+            android:text="@string/message"
+            android:textColor="@color/text_color_content" />
+
+        <TextView
+            android:id="@+id/my"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="1dp"
+            android:drawableTop="@drawable/icon_my_un_focused"
+            android:gravity="center"
+            android:text="@string/my"
+            android:textColor="@color/text_color_content" />
+    </LinearLayout>
+
+</LinearLayout>

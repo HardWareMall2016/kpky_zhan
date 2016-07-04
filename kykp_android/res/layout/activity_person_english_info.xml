@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/person_eng_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/person_center_info_left"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                />
+
+            <ImageView
+                android:id="@+id/person_eng_center"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/person_center_info_center"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/person_eng_right"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/person_eng_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/person_center_info_right"
+                android:layout_marginRight="30dp"
+                />
+            <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:id="@+id/person_eng_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/imageView_person_eng_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/person_center_info_good"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#494949"
+                    android:layout_below="@+id/imageView_person_eng_good"
+                    android:textSize="10dp"
+                    android:text="2048"
+                    android:layout_marginTop="4dp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+            android:layout_margin="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            >
+
+            <TextView
+                android:id="@+id/person_eng_info_starttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="03:00"
+                android:textSize="@dimen/text_size_large"
+                android:layout_centerVertical="true"
+                />
+            <com.zhan.kykp.widget.SampleProgressView
+                android:id="@+id/person_eng_progress_view"
+                android:layout_toRightOf="@+id/person_eng_info_starttime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="06:48"
+                android:layout_toRightOf="@+id/person_eng_progress_view"
+                android:textSize="@dimen/text_size_large"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

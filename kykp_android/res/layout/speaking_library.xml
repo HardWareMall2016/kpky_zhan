@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:pull_refresh="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/speaking_search_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/speaking_search_history"
+            android:textColor="@color/text_color_content"
+            android:textSize="@dimen/text_size_normal" />
+
+        <ListView
+            android:id="@+id/search_history_list"
+            android:background="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="1dp"
+            android:divider="@color/divider_color"
+            android:listSelector="#00000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/speaking_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tpo_speaking"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minHeight="32dp"
+                android:text="@string/speaking_tpo_speaking"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/new_gold_speaking"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minHeight="32dp"
+                android:text="@string/speaking_new_gold_speaking"
+                android:textColor="@color/dark_red"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/jj_speaking"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minHeight="32dp"
+                android:text="@string/speaking_jj_speaking"
+                android:textColor="@color/dark_red"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/speaking_list"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/transparent"
+            pull_refresh:ptrAnimationStyle="scale"
+            android:dividerHeight="12dp"
+            android:fadingEdge="none"
+            android:groupIndicator="@null"
+            android:listSelector="#00000000" 
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true" 
+            />
+    </LinearLayout>
+</LinearLayout>

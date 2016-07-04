@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle_image="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/my_recording"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:minHeight="45dp"
+            android:text="@string/my_tpo_recording"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/view_example"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:minHeight="45dp"
+            android:text="@string/my_tpo_view_sample"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <ScrollView
+            android:id="@+id/content_my_recording"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card"
+                    android:paddingBottom="30dp"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:paddingTop="24dp" >
+
+                    <TextView
+                        android:id="@+id/question_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_tpo_question"
+                        android:textColor="@color/text_color_title"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <TextView
+                        android:id="@+id/tpo_question"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/question_title"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="3dp"
+                        android:textColor="@color/text_color_content"
+                        android:textSize="@dimen/text_size_normal" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/card"
+                    android:orientation="vertical"
+                    android:paddingBottom="28dp"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:paddingTop="18dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/my_speaking_your_score"
+                            android:textColor="@color/text_color_title"
+                            android:textSize="@dimen/text_size_large" />
+
+                        <TextView
+                            android:id="@+id/score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginStart="4dp"
+                            android:textColor="@color/cyan"
+                            android:textSize="28sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="22dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/divider_color" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <com.zhan.kykp.widget.CircleImageView
+                            android:id="@+id/img_student"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginRight="12dp"
+                            android:src="@drawable/def_avatar"
+                            circle_image:border_width="0dp" />
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="62dp"
+                            android:layout_marginRight="62dp" >
+
+                            <TextView
+                                android:id="@+id/student_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:ellipsize="end"
+                                android:maxWidth="80dp"
+                                android:singleLine="true"
+                                android:textColor="@color/text_color_supplementary"
+                                android:textSize="@dimen/text_size_small" />
+
+                            <TextView
+                                android:id="@+id/student_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:textColor="@color/text_color_supplementary"
+                                android:textSize="@dimen/text_size_small" />
+
+                            <RelativeLayout
+                                android:id="@+id/student_audio_content"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40dp"
+                                android:layout_alignEnd="@id/student_date"
+                                android:layout_alignLeft="@id/student_name"
+                                android:layout_alignRight="@id/student_date"
+                                android:layout_alignStart="@id/student_name"
+                                android:layout_below="@id/student_name"
+                                android:layout_marginTop="9dp"
+                                android:background="@drawable/speaking_left_bg"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="12dp" >
+
+                                <TextView
+                                    android:id="@+id/student_audio_second"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:id="@+id/student_audio"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="62dp"
+                            android:layout_marginStart="62dp"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/teacher_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:textColor="@color/text_color_supplementary"
+                                android:textSize="@dimen/text_size_small" />
+
+                            <TextView
+                                android:id="@+id/teacher_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:ellipsize="end"
+                                android:maxWidth="80dp"
+                                android:singleLine="true"
+                                android:textColor="@color/text_color_supplementary"
+                                android:textSize="@dimen/text_size_small" />
+
+                            <RelativeLayout
+                                android:id="@+id/teach_audio_content"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40dp"
+                                android:layout_alignEnd="@id/teacher_name"
+                                android:layout_alignLeft="@id/teacher_date"
+                                android:layout_alignRight="@id/teacher_name"
+                                android:layout_alignStart="@id/teacher_date"
+                                android:layout_below="@id/teacher_name"
+                                android:layout_marginTop="9dp"
+                                android:background="@drawable/speaking_right_bg"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="20dp" >
+
+                                <ImageView
+                                    android:id="@+id/teacher_audio"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true" />
+
+                                <TextView
+                                    android:id="@+id/teacher_audio_second"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/img_teacher"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginStart="12dp"
+                            android:src="@drawable/def_avatar" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/content_view_sample"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card"
+            android:paddingBottom="30dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="0dp" >
+
+            <TextView
+                android:id="@+id/sample_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/my_tpo_sample"
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/tpo_sample"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sample_title"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/text_color_content"
+                android:textSize="@dimen/text_size_normal" />
+
+            <ImageView
+                android:id="@+id/sample_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_horizontal|top"
+                android:src="@drawable/tab" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

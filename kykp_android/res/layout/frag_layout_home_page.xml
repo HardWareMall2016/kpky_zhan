@@ -1,0 +1,68 @@
+<com.zhan.kykp.widget.PullToZoom.PullToZoomScrollViewEx xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+</com.zhan.kykp.widget.PullToZoom.PullToZoomScrollViewEx>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.zhan.kykp.widget.DailyView
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:background="@drawable/bg_daily_view" />
+    口语练习
+
+     <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" > 
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            口语练习
+            <ImageView
+                android:id="@+id/btn_speaking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/main_icon_speaking_selector" />
+
+            跟读训练
+            <ImageView
+                android:id="@+id/btn_practice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/main_icon_practice_selector" />
+
+            口语模考
+            <ImageView
+                android:id="@+id/btn_tpo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/main_icon_tpo_selector" />
+            名校库
+            <ImageView
+                android:id="@+id/btn_mxk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/main_icon_tpo_selector" />
+        </LinearLayout>
+     </ScrollView> 
+
+</LinearLayout>
+-->

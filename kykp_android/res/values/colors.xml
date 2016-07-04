@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="grey">#ff888888</color>
+    <color name="purple">#ff5837ff</color>
+    <color name="tangerine">#ffff2301</color>
+    <color name="blue_green">#ff02d9ca</color>
+    <color name="sky_blue">#ff01b0ff</color>
+    <color name="light_grey">#ff9a9a9a</color>
+    <color name="light_blue">#80daea</color>
+    <color name="dark_grey">#ff9a9a9a</color>
+    <color name="bottom_text_focused">#ff00b2ff</color>
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+    <!-- 状态栏颜色 -->
+    <color name="action_bar_bg_color">@color/white</color>
+    <!-- 青色 -->
+    <color name="cyan">#2dcbbb</color>
+    <color name="cyan_pressed">#19adae</color>
+    <!-- 深红 -->
+	<color name="dark_red">#f56374</color>
+	<color name="dark_red_pressed">#e65743</color>
+    
+    <color name="pressed_dark_color">#eeeeee</color>   
+    <color name="font_pressed_color">#6a6a6a</color>
+
+    <color name="disable_color">#ff959595</color>
+    
+    
+    <!-- 标题文本颜色 -->
+    <color name="text_color_title">#494949</color>
+    <!-- 内容文本颜色 -->
+    <color name="text_color_content">#808080</color>
+    <!-- 补充文本颜色 -->
+    <color name="text_color_supplementary">#aaaaaa</color>
+    <!-- 分割线颜色 -->
+    <color name="divider_color">#dddddd</color>
+    <!-- 翻译内容颜色 -->
+    <color name="text_color_trans">#808080</color>
+    
+    <color name="text_color_main">#6a6a6a</color>
+
+    <color name="main_background">#eeeeee</color>
+    
+    <color name="sub_background">#ff888888</color>
+    <color name="transparent">#00000000</color>
+    <!-- <color name="doki_green">#63d780</color>
+    <color name="doki_red">#ff8888</color> -->
+    <!-- 注册界面灰色线条-->
+    <color name="login_gray">#99a3b1</color>
+    <!-- drawable -->
+    <drawable name="transparent">@color/transparent</drawable>
+    <drawable name="half_transparent">#d9d9d9</drawable>
+    <drawable name="light_grey">#f5f5f5</drawable>
+    <drawable name="divider">@color/divider_color</drawable>
+</resources>

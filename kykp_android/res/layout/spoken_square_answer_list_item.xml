@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle_image="http://schemas.android.com/apk/res-auto"
+    xmlns:kpky="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_underline"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp" >
+
+        <com.zhan.kykp.widget.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/def_avatar"
+            circle_image:border_width="0dp" />
+
+        <LinearLayout
+            android:id="@+id/name_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@id/avatar"
+            android:layout_toRightOf="@id/avatar"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_small" />
+
+            <ImageView
+                android:id="@+id/teach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/icon_teacher" />
+
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:background="@drawable/bg_cyan_half_circle"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/sound_content"
+            android:layout_width="162dp"
+            android:layout_height="34dp"
+            android:layout_alignLeft="@id/name_content"
+            android:layout_alignStart="@id/name_content"
+            android:layout_below="@id/name_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spoken_square_answer_sound_selector"
+            android:paddingEnd="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="10dp"
+            android:paddingStart="14dp" >
+
+            <TextView
+                android:id="@+id/sound_seconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/dark_red"
+                android:textSize="@dimen/text_size_normal" />
+
+            <ImageView
+                android:id="@+id/sound_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/sound_red_anim_right" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/sound_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@id/sound_content"
+            android:layout_toRightOf="@id/sound_content"
+            android:textColor="@color/text_color_content"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:baselineAligned="false" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <com.zhan.kykp.widget.RatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                kpky:empty_star="@drawable/rating_small_empty"
+                kpky:full_star="@drawable/rating_small_full"
+                kpky:half_star="@drawable/rating_small_half"
+                kpky:isIndicator="true"
+                kpky:numStars="5"
+                kpky:rating="4.5"
+                kpky:startsPadding="4dp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider_color" />
+
+        <FrameLayout
+            android:id="@+id/attention_or_private_letter_conetnt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/default_backgroud" >
+
+            <TextView
+                android:id="@+id/attention_or_private_letter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/spoken_square_private_letter"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/spoken_square_private_letter"
+                android:textColor="@color/text_color_content"
+                android:textSize="@dimen/text_size_normal" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/praise_conetnt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/default_backgroud" >
+
+            <TextView
+                android:id="@+id/praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/spoken_square_un_praise"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/spoken_square_un_praise"
+                android:textColor="@color/text_color_content"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/praise_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/praise"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@id/praise"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:text="+1"
+                android:textColor="@color/dark_red"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

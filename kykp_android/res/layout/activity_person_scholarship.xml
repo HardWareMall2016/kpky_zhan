@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle_image="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/personcenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <com.zhan.kykp.widget.CircleImageView
+            android:id="@+id/scholship_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/def_avatar"
+            circle_image:border_width="0dp" />
+
+        <TextView
+            android:id="@+id/scholship_nickname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/scholship_avatar"
+            android:text="@string/mysholarship"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_large" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scholship_nickname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/scholship_avatar">
+
+            <ImageView
+                android:id="@+id/imageView_scholship_monc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/scholship_money" />
+
+            <TextView
+                android:id="@+id/scholarship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imageView_scholship_monc"
+                android:text="3023"
+                android:textColor="#ff6666"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/integral_mall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/scholship_avatar"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_cyan_rounded"
+            android:drawableLeft="@drawable/iocn_mall"
+            android:drawablePadding="10dp"
+            android:minHeight="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/integral_mall_go"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE" />
+
+    <WebView
+        android:id="@+id/scholarship_webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></WebView>
+</LinearLayout>

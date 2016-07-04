@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="company_name">小站教育</string>
+    <string name="app_name">小站备考</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="network_disconnect">没有可用网络</string>
+    <string name="unknow_error">未知错误</string>
+    <string name="finish">完成</string>
+    <string name="close">关闭</string>
+    <string name="download">下载</string>
+    <string name="loading">载入中，请稍后...</string>
+    <string name="delete_confirm">确定要删除吗？</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="be_sure">确认</string>
+    <string name="coming_soon">敬请期待</string>
+    <string name="home_page">首页</string>
+    <string name="message">消息</string>
+    <string name="my">我的</string>
+    <string name="submit">提交</string>
+    <string name="recording_not_exist">未找到录音文件!</string>
+    <string name="unit_day">天</string>
+    <string name="sex_male">男</string>
+    <string name="sex_female">女</string>
+
+    
+    <string name="home_page_def_en_sentence">Work is the greatest thing in the world, so we should always save some of it for tomorrow.</string>
+    <string name="home_page_def_ch_sentence">工作是世界上最棒的事情，所以我们每天都要省下一些明天再做。</string>
+    <string name="home_page_def_sentence_author">Don Herold</string>
+
+    <!-- 首页 -->
+    <string name="wobeikao">我要备考</string>
+    <string name="tpoxunlian">托福、雅思训练营</string>
+    <string name="testdata">考试日期 :</string>
+    <string name="upto_exam_time">离考试还有 : </string>
+    <string name="is_exam_time">考试啦！加油！</string>
+    <string name="home_page_setting">设置</string>
+    <string name="home_page_test_order">考位预订</string>
+    <string name="home_page_abroad_frident">留学交友</string>
+    <string name="home_page_happy_eng_everyday">快乐英语每一天</string>
+    <string name="home_page_speaking_out">开口说出来</string>
+    <string name="home_page_person_eng">名人英语</string>
+    <string name="home_page_listen_person_eng">听听名人秀英语</string>
+    <string name="home_page_scan_school">纵览各大名校</string>
+    <string name="home_page_abord_strategy">留学全攻略</string>
+    <string name="home_page_live_money">经历就是财富</string>
+    <string name="home_page_meeting">签到领奖学金</string>
+    <string name="home_page_signed">已签到</string>
+    <string name="home_page_music">音乐调频</string>
+    <string name="home_page_music_detaile">音乐调频详情</string>
+    <string name="home_page_music_english">听歌学英语</string>
+    
+    <!-- 登录&注册 -->
+    <string name="login">登录</string>
+    <string name="login_success">登录成功!</string>
+    <string name="register">注册</string>
+    <string name="register_success">注册成功!</string>
+    <string name="hint_phone_number">请输入手机号</string>
+    <string name="hint_phone_pwd">请输入密码</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="user_profile">用户信息</string>
+    <string name="phone_number_empty">请输入手机号</string>
+    <string name="phone_number_invalid">请输入正确的手机号</string>
+    <string name="pwd_empty">密码不能为空</string>
+    <string name="logining">登录中...</string>
+    <string name="processing">获取授权中...</string>
+    <string name="registering">注册中...</string>
+    <string name="modifying">修改中...</string>
+    <string name="get_sms_code">获取验证码</string>
+    <string name="input_sms_code">请输入验证码</string>
+    <string name="check_sms_code">请确认输入正确的验证码</string>
+    <string name="re_get_time_left">%d秒后重试</string>
+    <string name="sms_code_msg_verify">注册手机号验证</string>
+    <string name="sms_code_msg_change_pwd">修改密码验证</string>
+    <string name="phone_number_exists">手机号已注册</string>
+    <string name="next_step">下一步</string>
+    <string name="input_nickname">请输入您的昵称</string>
+    <string name="input_pwd">请输入6-16位密码</string>
+    <string name="reinput_pwd">请输重复输入密码</string>
+    <string name="pwd_length_error">密码必须为6-16位</string>
+    <string name="re_pwd_not_equal">两次输入的密码不相同</string>
+    <string name="set_new_pwd_success">设置新密码成功</string>
+    <string name="input_new_pwd">请输入新密码</string>
+    <string name="re_input_new_pwd">请再次输入密码</string>
+    <string name="submitting">提交中，请稍后...</string>
+    <string name="bbs_login">论坛登录</string>
+    <string name="hint_user_name">请输入用户名</string>
+    <string name="nick_name_too_long">昵称不能超过12个字符</string>
+    <string name="modify_phone_success">更换手机号成功</string>
+    <string name="binding_phone_success">绑定手机号成功</string>
+    <string name="input_nickage">请输入您的年龄</string>
+
+    <!-- 个人中心 -->
+    <string name="title_activity_modify_phone">更换手机号码</string>
+    <string name="user_info">个人信息</string>
+    <string name="clearing_cache">正在清除缓存，请稍后...</string>
+    <string name="clear_cache_finished">已清除%s缓存空间</string>
+    <string name="personal_center">个人中心</string>
+    <string name="exit_account">退出账号</string>
+    <string name="exit_account_success">已退出账号</string>
+    <string name="my_speaking">我的口语练习</string>
+    <string name="my_practice">我的跟读</string>
+    <string name="my_tpo">我的模考</string>
+    <string name="my_task">我的任务</string>
+    <string name="system">系统</string>
+    <string name="my_profile">个人信息</string>
+    <string name="about_us">关于我们</string>
+    <string name="my_tpo_question">Question:</string>
+    <string name="my_tpo_sample">Sample:</string>
+    <string name="my_tpo_recording">我的录音</string>
+    <string name="my_tpo_view_sample">查看Sample</string>
+    <string name="my_tpo_details_title" formatted="false">%s-%s 模考</string>
+    <string name="my_tpo_recording_not_exists">录音文件不存在</string>
+    <string name="my_speaking_local_recording">本地录音</string>
+    <string name="my_speaking_correcting">批改中</string>
+    <string name="my_speaking_corrected">已批改</string>
+    <string name="my_speaking_answer_record">答题记录</string>
+    <string name="my_speaking_view_correct_details">查看详情</string>
+    <string name="my_speaking_correct_details">批改详情</string>
+    <string name="my_speaking_your_score">Your Score:</string>
+    <string name="user_info_head">头像</string>
+    <string name="user_info_nickname">昵称</string>
+    <string name="user_info_age">年龄</string>
+    <string name="user_info_sex">性别</string>
+    <string name="user_info_phone_number">手机号码</string>
+    <string name="user_info_please_binding_phone">请绑定手机号</string>
+    <string name="user_info_binding_phone">绑定手机号</string>
+    <string name="user_info_loginpass">登录密码</string>
+    <string name="user_info_modify">修改</string>
+    <string name="modify_phone_over">完成</string>
+    <string name="user_custorm">小站客服</string>
+    <string name="weichat_copy">复制</string>
+    <string name="statistic_kouyubofang">我的口语练习播放按钮</string>
+    <string name="statistic_mypraticebofang">我的跟读播放按钮</string>
+    <string name="mytpodetails_bofang">我的模考详情播放按钮</string>
+    <string name="my_sholarship">奖学金</string>
+    <string name="mysholarship">我的奖学金</string>
+    <!-- 修改密码-->
+    <string name="passwd_currentpass">请输入当前密码</string>
+    <string name="passwd_newpass">请输入6-16位新密码</string>
+    <string name="passwd_newpassagain">请重复输入新密码</string>
+    <!-- toast-->
+    <string name="toast_modifyok">更改成功</string>
+    <string name="toast_copyed">复制成功</string>
+
+    <!-- 关于我们-->
+    
+    <string name="us_about">关于我们</string>
+    <string name="us_link">官方网站: http://www.zhan.com/</string>
+    <string name="us_wechat">微信公众号: youkaowei</string>
+    <string name="us_index">新功能介绍</string>
+    <string name="us_grade">打分鼓励一下</string>
+    <string name="us_clear">清除缓存</string>
+    <string name="us_error">没有应用市场,请安装市场后重试</string>
+    <string name="login_other">第三方账号登陆</string>
+    <string name="us_feedback">意见反馈</string>
+
+    <!--版本升级-->
+    <string name="new_version">发现新版本</string>
+    <string name="update_now">立即更新</string>
+    <!-- 名校库-->
+    <string name="MXKActivity">名校库</string>
+    
+    <!-- 个人主页 -->
+    <string name="person_center">我的主页</string>
+    <string name="person_speaking">口语练习</string>
+    <string name="person_answer">精彩回答</string>
+    <string name="person_focus">关注</string>
+    <string name="person_fans">粉丝</string>
+    <string name="person_letter">私信</string>
+    <string name="person_spokensquare">去口语广场练习</string>
+    <string name="myperson_focus">我的关注</string>
+    <string name="person_addfocus">+关注</string>
+    <string name="person_addfollowee">加关注</string>
+    <string name="person_successfollowee">关注成功！</string>
+    <string name="person_failefollowee">关注失败！</string>
+    <string name="person_cancelsuccessfollowee">取消关注成功！</string>
+    <string name="person_cancelfailefollowee">取消关注失败！</string>
+    <string name="person_followeeed">已关注</string>
+    <string name="person_otherfollowee">相互关注</string>
+    <string name="personcenter_bofang">我的主页播放按钮</string>
+    <string name="personcenter_thumbs_up">我的主页点赞</string>
+    <string name="personcenter_back">我的主页返回按钮</string>
+    <string name="personcenter_spokensquare">我的主页去口语广场按钮</string>
+    <string name="personcenter_more">他人个人主页更多按钮</string>
+    <string name="personcenter_more_cancelFances">他人个人主页更多中取消关注</string>
+    <string name="personcenter_more_addFances">他人个人主页更多种加关注</string>
+
+    <!-- 口语模考 -->
+    <string name="tpo">口语模考</string>
+    <string name="tpo_title_subfix">模考</string>
+    <string name="tpo_intro">%s 题型介绍</string>
+    <string name="tpo_ignore">跳过</string>
+    <string name="tpo_puton_headset">Please put on your headset</string>
+    <string name="tpo_topic_intro">题型介绍</string>
+    <string name="tpo_saving_recording">录音保存中...</string>
+    <string name="tpo_exting_tpo">正在退出模考</string>
+    <string name="tpo_exit_confirm_msg">答题过程中退出模考，\n您可在\"我的模考\"查看答题记录</string>
+    <string name="tpo_exit_confirm">退出模考</string>
+    <string name="tpo_exit_cancel">继续答题</string>
+    <string name="tpo_remain_time">Reading Time: %d s</string>
+    <string name="tpo_re_answer_question">重新答题</string>
+    
+    <!-- 跟读训练 -->
+    <string name="practice">跟读训练</string>
+    <string name="practice_details_title">Question</string>
+    <string name="practice_resolving_idea">解题思路</string>
+    <string name="practice_diffculty">难点:</string>
+    <string name="practice_hint">提示:</string>
+    <string name="practice_finish_pre_paragraph">必须先完成前面的段落</string>
+    <string name="practice_merge_recording">正在合成录音</string>
+    <string name="practice_my_recording">我的录音</string>
+    <string name="practice_back_recording">返回重录</string>
+    <string name="practice_merge_recording_failed">合成录音失败</string>
+    <string name="practice_trans">翻译</string>
+    <string name="practice_word_details">单词详情</string>
+	<string name="practice_un_found_mean">未找到词义</string>
+	<string name="practice_exting">正在退出训练</string>
+    <string name="practice_exit_confirm_msg">答题过程中退出，\n您可在\"我的跟读\"查看答题记录</string>
+    <string name="practice_exit_confirm">退出训练</string>
+    <string name="practice_exit_cancel">继续答题</string>
+
+    <!-- 口语练习 -->
+    <string name="speaking">口语练习</string>
+    <string name="speaking_library">口语题库</string>
+    <string name="speaking_tpo_speaking">TPO口语</string>
+    <string name="speaking_new_gold_speaking">新黄金口语</string>
+    <string name="speaking_jj_speaking">机经口语</string>
+    <string name="speaking_type_tpo">TPO</string>
+    <string name="speaking_type_new_gold">新黄金口语</string>
+    <string name="speaking_type_jj">机经口语</string>
+    <string name="speaking_new_gold_format_name"  formatted="false">新黄金口语第%d道题</string>
+    <string name="speaking_jj_format_name"  formatted="false">机经口语%s重复%s次</string>
+    <string name="speaking_invade_answer">答题时间小于 35 秒,无效答题</string>
+    <string name="speaking_save_success">保存成功</string>
+    <string name="speaking_save_recording">保存录音</string>
+    <string name="speaking_apply_for_correcting">申请批改</string>
+    <string name="speaking_apply_success">申请成功</string>
+    <string name="speaking_applying">申请中...</string>
+    <string name="speaking_selelct_question">题目选择</string>
+    <string name="speaking_answering_classification">答题分类</string>
+    <string name="speaking_content_classification">内容分类</string>
+    <string name="speaking_all_question">全部</string>
+    <string name="speaking_un_answered">未答题</string>
+    <string name="speaking_search">请输入关键字</string>
+    <string name="speaking_cancel">取消</string>
+    <string name="speaking_search_history">搜索历史</string>
+    <string name="speaking_search_result">%d 条搜索结果</string>
+    <string name="speaking_upload">上传中...</string>
+    <string name="speaking_apply_times">每天最多只能申请%d次批改。</string>
+    <string name="speaking_answer_success">答题成功</string>
+    <string name="speaking_exting_practice">正在退出口语练习</string>
+    <string name="speaking_exit_confirm_msg">答题过程中退出练习，\n您可在\"我的口语练习\"查看答题记录</string>
+    <string name="speaking_exit_confirm">退出练习</string>
+    <string name="speaking_exit_cancel">继续答题</string>
+    
+    <!-- Start 内容分类 -->
+    <string name="speaking_education">Education</string>
+    <string name="speaking_leisure_time">Leisure time</string>
+    <string name="speaking_advice">Advice</string>
+    <string name="speaking_modern_tech">Modern Tech.</string>
+    <string name="speaking_object">Object</string>
+    <string name="speaking_job">Job</string>
+    <string name="speaking_activity">Activity</string>
+    <string name="speaking_person">Person</string>
+    <string name="speaking_random">Random</string>
+    <string name="speaking_life">Life</string>
+    <string name="speaking_experience">Experience</string>
+	<string name="speaking_place">Place</string>
+    <string name="speaking_money">Money</string>
+    <string name="speaking_media">Media</string>
+    <string name="speaking_skill">Skill</string>
+    <!-- End  内容分类 -->
+    <string name="speaking_jj_prediction">机经预测</string>
+    
+    <!-- 雅思题库 -->
+    
+    <string name="speaking_ielts_library">雅思题库</string>
+    <string name="speaking_ielts_content_classification">题库分类</string>
+    <string name="speaking_ielts_four">剑桥4</string>
+    <string name="speaking_ielts_five">剑桥5</string>
+    <string name="speaking_ielts_six">剑桥6</string>
+    <string name="speaking_ielts_seven">剑桥7</string>
+    <string name="speaking_ielts_eight">剑桥8</string>
+    <string name="speaking_ielts_nine">剑桥9</string>
+    <string name="speaking_ielts_ten">剑桥10</string>
+    
+    <!-- 口语广场 -->
+    <string name="spoken_square_title">口语广场</string>
+    <string name="spoken_square_topic_history">历史话题</string>
+    <string name="spoken_square_topic_today">每日话题</string>
+    <string name="spoken_square_grading_by_me">我来打分</string>
+    <string name="spoken_square_good_answer">精彩回答</string>
+    <string name="spoken_square_all_answer">全部回答</string>
+    <string name="spoken_square_grade_for_answer">给回答评分</string>
+    <string name="spoken_square_listen_other">听听其他</string>
+    <string name="spoken_square_switch_other">换一换</string>
+    <string name="spoken_square_other_grade">大家的评分</string>
+    <string name="spoken_square_grade_count">%d人评分</string>
+    <string name="spoken_square_good_answer_comment">喜欢就点赞哦~总评分超过4星会选为精彩回答</string>
+    <string name="spoken_square_private_letter">私信</string>
+    <string name="spoken_square_attention">关注</string>
+    <string name="spoken_square_upload_recording">上传录音</string>
+    <string name="spoken_square_uploading_recording">录音上传中...</string>
+    <string name="spoken_square_upload_recording_failed">上传录音失败，请重试!</string>
+    <string name="spoken_square_upload_recording_Success">上传录音成功!</string>
+    <string name="spoken_square_re_answer">重新答题</string>
+    <string name="spoken_square_exting">正在退出口语广场</string>
+    <string name="spoken_square_exit_confirm_msg">确定要在答题过程中退出广场吗？</string>
+    <string name="spoken_square_has_praised">您已经赞过了！</string>
+    <string name="spoken_square_praise_success">点赞成功！</string>
+    <string name="spoken_square_praise_failed">点赞失败，请重试!</string>
+    <string name="spoken_square_attention_success">关注成功！</string>
+    <string name="spoken_square_attention_failed">关注失败，请重试!</string>
+    <string name="spoken_square_no_answer">暂无答题记录，请稍后再试！</string>
+    <string name="spoken_square_download_audio_failed">下载语音失败，请重试!</string>
+    <string name="spoken_square_mark_failed">评分失败，请重试！</string>
+    <string name="spoken_square_attention_self">无效操作，您关注的是自己！</string>
+    <string name="spoken_square_praisen_self">无效操作，您赞的是自己！</string>
+    <string name="spoken_square_get_new_answer">已获取回答信息!</string>
+    <string name="spoken_square_recording_no_opt">请先取消答题</string>
+    <string name="spoken_square_mark_later">请再耐心听一会!</string>
+    <string name="spoken_square_listening_first">请先播放回答!</string>
+    
+    <!-- 发布渠道 -->
+    <string name="publish_channel_x1">X1</string>
+    <string name="publish_channel_x2">X2</string>
+    <string name="publish_channel_x3">X3</string>
+    <string name="publish_channel_x4">X4</string>
+    <string name="publish_channel_x5">X5</string>
+    <string name="publish_channel_x6">X6</string>
+    <string name="publish_channel_x7">X7</string>
+    <string name="publish_channel_x8">X8</string>
+    <string name="publish_channel_x9">X9</string>
+    <string name="publish_channel_x10">X10</string>
+    <string name="publish_channel_360">360手机助手</string>
+    <string name="publish_channel_vmail">华为应用市场</string>
+    <string name="publish_channel_lenovo">乐商店</string>
+
+    <!-- 消息 -->
+    <string name="my_msg">我的消息</string>
+    <string name="sys_msg">系统消息</string>
+    <string name="sys_praise">赞</string>
+    <string name="no_more_sys_msg">没有更多消息了</string>
+    <string name="query_privte_msg_failed">获取私信失败，请重试！</string>
+    <string name="send_empty_msg">发送消息的内容为空！</string>
+    <string name="send_msg_failed">发送消息失败，请重试！</string>
+    <string name="send_msg_network_error">网络异常，请重试！</string>
+    <string name="send_msg">发送</string>
+
+    <!--意见反馈-->
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_empty">提交内容不能为空!</string>
+    <string name="feedback_submiting">提交中请稍后...</string>
+    <string name="feedback_submitted_success">提交成功!</string>
+    <string name="feedback_hint">请输入您的宝贵意见，我们收到后会及时答复</string>
+    <string name="feedback_qq_prefix">小站备考APP用户反馈QQ群：</string>
+    <string name="feedback_qq">419552076</string>
+    
+    <!-- network-->
+    <string name="json_format_error">Josn 数据格式错误</string>
+    <string name="unknow_service_error">服务器未知错误</string>
+    <string name="download_fialed">下载失败</string>
+    <string name="network_error">获取数据失败,请检查网络连接!</string>
+    <string name="no_network_error">没有连接到网络!</string>
+    <string name="network_query_data_failed">获取数据失败,请重试!</string>
+    <string name="no_more_data">已经到底了！</string>
+    <string name="network_download_path_null">下载地址为空!</string>
+
+    <!-- 工具类 -->
+    <string name="utils_share">分享</string>
+    <string name="utils_please_choose">请选择</string>
+    <string name="utils_hardLoading">努力加载中...</string>
+    <string name="utils_right">好的</string>
+    <string name="utils_tips">提示</string>
+    <string name="title_activity_modify_passwd">修改密码</string>
+    <string name="title_activity_modify_nick">修改昵称</string>
+    <string name="title_activity_modify_age">修改年龄</string>
+    <string name="title_activity_about">关于我们</string>
+    <string name="title_activity_index">引导页</string>
+    <string name="title_activity_about_us">系统</string>
+    
+    <!-- 点赞列表 -->
+    <string name="recommend_your_answer">赞了你的回答</string>
+    <string name="recommend_title">赞</string>
+
+    <!-- 关注的人&&粉丝 -->
+    <string name="person_focus_none">没有关注的人</string>
+    <string name="person_fans_none">没有粉丝</string>
+    <string name="person_title_fans">粉丝</string>
+    <string name="person_title_focus">关注的人</string>
+    <string name="person_title_list">关注的人和粉丝列表</string>
+
+    <!-- 历史话题 -->
+    <string name="tody_topic">今日话题</string>
+
+    <!--统计，埋点 -->
+    <string name="statistic_register_profile">注册详情</string>
+    <string name="statistic_tpo_list">模考列表</string>
+    <string name="statistic_my_tpo_details">我的模考详情</string>
+    <string name="statistic_practice_list">跟读训练列表</string>
+    <string name="statistic_practice_details">跟读训练详情</string>
+    <string name="statistic_private_letter">私信</string>
+    <string name="statistic_person_center">主页信息</string>
+    <string name="statistic_goto_details_page">进入详情页</string>
+    <string name="statistic_praise">点赞</string>
+
+    <string name="statistic_play_stop_audio">播放/停止音频</string>
+
+     <!-- 我的任务 -->
+     <string name="mytask_square_question">口语广场答题</string>
+     <string name="mytask_mark_20">+20</string>
+     <string name="mytask_mark_30">+30</string>
+     <string name="mytask_mark_50">+50</string>
+     <string name="mytask_scale_1">0/1</string>
+     <string name="mytask_scale_3">0/3</string>
+     <string name="mytask_scale_5">0/5</string>
+     <string name="mytask_unfinish">未完成</string>
+     <string name="mytask_finish">已完成</string>
+     <string name="mytask_square_grade">口语广场评分</string>
+     <string name="mytask_reference">备考任务</string>
+     <string name="mytask_other">其他任务</string>
+     <string name="mytask_spoken_practice">口语练习</string>
+     <string name="mytask_gendu">跟读训练</string>
+     <string name="mytask_tpo">口语模考</string>
+     <string name="mytask_phone">手机绑定</string>
+     <string name="mytask_five_frend">积累5个好友</string>
+     <string name="mytask_eng_share">名人英语分享</string>
+     <string name="mytask_test_data">填写考试日期</string>
+     <!-- 名人英语 -->
+     <string name="celebrity_english">名人英语</string>
+    <string name="celebrity_download_audio_path_null">未找到音频文件</string>
+    <string name="celebrity_downloading_audio">正在下载,请稍后...</string>
+    <string name="celebrity_show_time" formatted="false"> %d分%02d秒</string>
+    <string name="celebrity_has_praised">您已经赞过了！</string>
+    <string name="celebrity_praise_success">点赞成功！</string>
+    <string name="celebrity_praise_failed">点赞失败，请重试!</string>
+
+    <!-- 留学攻略 -->
+    <string name="abroadstrategy">留学攻略</string>
+
+    <string name="exam_time_ielts">雅思</string>
+    <string name="exam_time_toefl">托福</string>
+    <string name="exam_time_set">设置考试日期</string>
+    <string name="exam_time_not_set_time">请选择考试日期</string>
+
+    <!-- 积分商城 -->
+    <string name="integral_mall_go">去商城逛逛</string>
+    <string name="integral_mall_title">积分商城</string>
+    <string name="integral_mall_exchange_none">已兑完</string>
+    <string name="integral_mall_exchange_go">去兑换</string>
+    <string name="integral_mall_exchange_need_scholarship">需要奖学金</string>
+    <string name="integral_mall_exchange_remain_num">剩余数量：</string>
+    <string name="integral_mall_exchange_no_location">请填写收货地址</string>
+    <string name="integral_mall_exchange_goods_num">数量</string>
+    <string name="integral_mall_total_scholarship">已有奖学金</string>
+    <string name="integral_mall_nonetwork_for_addr">获取收货地址失败,请检查网络连接!</string>
+    <string name="integral_mall_addr_consignee">收货人:</string>
+    <string name="integral_mall_addr_detail">收货地址:</string>
+    <string name="integral_mall_addr_postcode">邮政编码:</string>
+    <string name="integral_mall_addr_remark">备注:</string>
+
+    <string name="integral_mall_exchange_records">兑换记录</string>
+    <string name="integral_mall_exchange_confirm">兑换确认</string>
+    <string name="integral_mall_dlg_exchange_confirm">您是否确认兑换该物品？</string>
+    <string name="integral_mall_dlg_exchange_now">立即兑换</string>
+    <string name="integral_mall_dlg_exchange_cancel">暂不兑换</string>
+
+    <string name="integral_mall_dlg_exchanging">正在提交，请稍后...</string>
+    <string name="integral_mall_exchange_success">兑换成功！\n您的奖学金余额为</string>
+
+    <string name="integral_mall_consignee_address_title">收货人信息填写</string>
+    <string name="integral_mall_not_null">必填</string>
+    <string name="integral_mall_consignee_name">请输入收货人姓名</string>
+    <string name="integral_mall_consignee_phonenumber">请输入联系电话</string>
+    <string name="integral_mall_consignee_city">请输入所在城市</string>
+    <string name="integral_mall_consignee_address">请输入详细地址</string>
+    <string name="integral_mall_consignee_postcode">请输入邮政编码</string>
+    <string name="integral_mall_consignee_six_postcode">请输入六位邮政编码</string>
+    <string name="integral_mall_consignee_remark">请输入备注信息</string>
+    <string name="integral_mall_consignee_save_success">保存完成</string>
+
+    <string name="integral_mall_record_remark">快递信息 : </string>
+</resources>

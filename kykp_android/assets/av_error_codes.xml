@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<av_error_codes>
+    <error_code id="0" >
+        <message>
+           	 通信异常，请确认网络连接正常
+        </message>
+    </error_code>
+    
+    <error_code id="1" >
+        <message>
+           	 服务器内部错误或者参数错误
+        </message>
+    </error_code>
+
+    <error_code id="100" >
+        <message>
+           	无法建立TCP连接到LeanCloud服务器
+        </message>
+    </error_code>
+    
+    <error_code id="101" >
+        <message>
+           	非法的class名称
+        </message>
+    </error_code>
+    
+    <error_code id="104" >
+        <message>
+           	缺少ObjectId
+        </message>
+    </error_code>
+    
+    <error_code id="105" >
+        <message>
+           	无效的key名称
+        </message>
+    </error_code>
+    
+    <error_code id="106" >
+        <message>
+           	无效的Pointer格式
+        </message>
+    </error_code>
+    
+    <error_code id="107" >
+        <message>
+           	无效的JSON对象，解析JSON数据失败
+        </message>
+    </error_code>
+    
+    <error_code id="108" >
+        <message>
+           	此API仅供内部使用
+        </message>
+    </error_code>
+    
+    <error_code id="111" >
+        <message>
+           	想要存储的值不匹配列的类型
+        </message>
+    </error_code>
+    
+    <error_code id="112" >
+        <message>
+           	推送订阅的频道无效，频道名称必须不是空字符串
+        </message>
+    </error_code>
+    
+    <error_code id="113" >
+        <message>
+           	Class 中的某个字段设定成必须，保存的对象缺少该字段
+        </message>
+    </error_code>
+    
+    <error_code id="114" >
+        <message>
+           	 iOS推送存储的deviceToken无效
+        </message>
+    </error_code>
+    
+    <error_code id="116" >
+        <message>
+           	要存储的对象超过了大小限制
+        </message>
+    </error_code>
+    
+    <error_code id="117" >
+        <message>
+           	更新的 Key 是只读属性，无法更新
+        </message>
+    </error_code>
+    
+    <error_code id="119" >
+        <message>
+           	该操作无法从客户端发起
+        </message>
+    </error_code>
+    
+    <error_code id="120" >
+        <message>
+           	查询结果无法从缓存中找到
+        </message>
+    </error_code>
+    
+    <error_code id="121" >
+        <message>
+           	JSON对象中key的名称不能包含$和.符号
+        </message>
+    </error_code>
+    
+    <error_code id="122" >
+        <message>
+           	无效的文件名称，文件名称只能是英文字母、数字和下划线组成，并且名字长度限制在1到36之间
+        </message>
+    </error_code>
+    
+    <error_code id="123" >
+        <message>
+           	ACL格式错误
+        </message>
+    </error_code>
+    
+    <error_code id="124" >
+        <message>
+           	请求超时，超过一定时间（默认10秒）没有返回
+        </message>
+    </error_code>
+    
+    <error_code id="125" >
+        <message>
+           	电子邮箱地址无效
+        </message>
+    </error_code>
+    
+    <error_code id="126" >
+        <message>
+           	无效的用户 Id，可能用户不存在
+        </message>
+    </error_code>
+    
+    <error_code id="127" >
+        <message>
+           	手机号码无效
+        </message>
+    </error_code>
+    
+    <error_code id="137" >
+        <message>
+           	违反class中的唯一性索引约束(unique)，尝试存储重复的值
+        </message>
+    </error_code>
+    
+    <error_code id="139" >
+        <message>
+           	角色名称非法，角色名称只能以英文字母、数字或下划线组成
+        </message>
+    </error_code>
+    
+    <error_code id="140" >
+        <message>
+           	超过应用的容量限额，请升级帐户等级
+        </message>
+    </error_code>
+    
+    <error_code id="141" >
+        <message>
+  			云代码脚本编译或者运行报错
+        </message>
+    </error_code>
+    
+    <error_code id="142" >
+        <message>
+           	云代码校验错误，通常是因为beforeSave、beforeDelete等函数返回error。
+        </message>
+    </error_code>
+    
+    <error_code id="145" >
+        <message>
+           	本设备没有启用支付功能
+        </message>
+    </error_code>
+    
+    <error_code id="150" >
+        <message>
+           	转换数据到图片失败
+        </message>
+    </error_code>
+    
+    <error_code id="160" >
+        <message>
+           	帐户余额不足
+        </message>
+    </error_code>
+    
+    <error_code id="200" >
+        <message>
+           	没有提供用户名，或者用户名为空
+        </message>
+    </error_code>
+    
+    <error_code id="201" >
+        <message>
+           	没有提供密码，或者密码为空
+        </message>
+    </error_code>
+    
+    <error_code id="202" >
+        <message>
+           	用户名已经被占用
+        </message>
+    </error_code>
+    
+    <error_code id="203" >
+        <message>
+           	电子邮箱地址已经被占用
+        </message>
+    </error_code>
+    
+    <error_code id="204" >
+        <message>
+           	没有提供电子邮箱地址
+        </message>
+    </error_code>
+    
+    <error_code id="205" >
+        <message>
+           	找不到电子邮箱地址对应的用户
+        </message>
+    </error_code>
+    
+    <error_code id="206" >
+        <message>
+           	没有提供session，无法修改用户信息
+        </message>
+    </error_code>
+    
+    <error_code id="207" >
+        <message>
+           	只能通过注册创建用户，不允许第三方登录
+        </message>
+    </error_code>
+    
+    <error_code id="208" >
+        <message>
+           	第三方帐号已经绑定到一个用户，不可绑定到其他用户
+        </message>
+    </error_code>
+    
+    <error_code id="210" >
+        <message>
+           	用户名和密码不匹配
+        </message>
+    </error_code>
+    
+    <error_code id="211" >
+        <message>
+           	找不到用户
+        </message>
+    </error_code>
+    
+    <error_code id="212" >
+        <message>
+           	请提供手机号码
+        </message>
+    </error_code>
+    
+    <error_code id="213" >
+        <message>
+           	手机号码对应的用户不存在
+        </message>
+    </error_code>
+    
+    <error_code id="214" >
+        <message>
+           	手机号码已经被注册
+        </message>
+    </error_code>
+    
+    <error_code id="215" >
+        <message>
+           	未验证的手机号码
+        </message>
+    </error_code>
+    
+    <error_code id="216" >
+        <message>
+           	未验证的邮箱地址
+        </message>
+    </error_code>
+    
+    <error_code id="250" >
+        <message>
+           	连接的第三方账户没有返回用户唯一标示id
+        </message>
+    </error_code>
+    
+    <error_code id="251" >
+        <message>
+           	无效的账户连接
+        </message>
+    </error_code>
+    
+    <error_code id="300" >
+        <message>
+           	CQL 语法错误
+        </message>
+    </error_code>
+    
+    <error_code id="301" >
+        <message>
+           	新增对象失败，通常是数据格式问题
+        </message>
+    </error_code>
+    
+    <error_code id="302" >
+        <message>
+           	无效的 GeoPoint 类型，请确保经度在 -180 到 180 之间，纬度在 -90 到 90 之间
+        </message>
+    </error_code>
+    
+    <error_code id="401" >
+        <message>
+           	未经授权的访问，没有提供App id，或者App id和App key校验失败，请检查配置
+        </message>
+    </error_code>
+    
+    <error_code id="403" >
+        <message>
+           	操作被禁止，因为class权限限制。
+        </message>
+    </error_code>
+    
+    <error_code id="502" >
+        <message>
+           	服务器维护中
+        </message>
+    </error_code>
+    
+    <error_code id="503" >
+        <message>
+           	超过流量访问限制
+        </message>
+    </error_code>
+    
+    <error_code id="600" >
+        <message>
+           	无效的短信签名
+        </message>
+    </error_code>
+    
+    <error_code id="601" >
+        <message>
+           	发送短信过于频繁
+        </message>
+    </error_code>
+    
+    <error_code id="602" >
+        <message>
+           	发送短信或者语音验证码失败，这是短信提供商返回错误
+        </message>
+    </error_code>
+    
+    <error_code id="603" >
+        <message>
+           	验证码错误
+        </message>
+    </error_code>
+    
+    <error_code id="604" >
+        <message>
+           	找不到自定义的短信模板
+        </message>
+    </error_code>
+    
+    <error_code id="605" >
+        <message>
+           	短信模板未审核
+        </message>
+    </error_code>
+    
+    <error_code id="606" >
+        <message>
+           	渲染短信模板失败
+        </message>
+    </error_code>
+</av_error_codes>
